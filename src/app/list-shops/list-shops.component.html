@@ -1,0 +1,39 @@
+<div class="scrollable-container">
+  <ul class="scrollable-container__inner">
+
+      <li class="list-wrapper" *ngFor="let shop of shops$ | async" (click)="goToShop(shop)">
+
+        <div class="header">
+
+          <div class="header__info">
+            <div style="font-size: 18px">{{shop.name}}</div>
+            <div>
+              <span class="header__small"> {{shop.rating.toFixed(2)}} </span>
+              <span style="font-size: 12px">{{getStars(shop)}}</span>
+            </div>
+            <div>
+              <span class="header__small">Tempo de entrega: </span> {{shop.estimatedDeliveryTime}}min
+            </div>
+            <div>
+              <span class="header__small">Taxa de entrega: </span>
+              <span *ngIf="!shop.deliveryFee || shop.deliveryFee == 0;else deliveryFee" class="header__small__free">Grátis</span>
+              <ng-template #deliveryFee>
+                {{shop.deliveryFee | currency}}
+              </ng-template>
+            </div>
+          </div>
+
+          <mat-divider vertical="true" class="header__divider"></mat-divider>
+          <div class="header__img-wrapper">
+            <img class="header__img-wrapper__img" src="{{shop.image}}">
+          </div>
+        </div>
+
+      </li>
+    </ul>
+</div>
+
+
+
+
+

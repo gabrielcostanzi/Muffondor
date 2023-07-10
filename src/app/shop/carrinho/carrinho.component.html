@@ -1,0 +1,172 @@
+<mat-sidenav-container fullscreen>
+
+  <mat-sidenav #sidenav mode="over" opened=false>
+    <mat-toolbar color="accent">Menu</mat-toolbar>
+    <mat-list>
+      <mat-list-item class="toolbar-item"><mat-icon color="accent">house</mat-icon> <a class="a" routerLink="/home">Home</a></mat-list-item>
+      <mat-list-item class="toolbar-item"><mat-icon color="accent">person</mat-icon> <a class="a" routerLink="/profile">Perfil</a></mat-list-item>
+      <mat-list-item class="toolbar-item"><mat-icon color="accent">reorder</mat-icon><a routerLink="/my-orders">Pedidos</a></mat-list-item>
+      <mat-list-item class="toolbar-item"><mat-icon color="accent">local_grocery_store</mat-icon><a routerLink="/carrinho">Carrinho</a></mat-list-item>
+      <mat-list-item *ngIf="profileType == 'CUSTOMER'"  class="toolbar-item"><mat-icon color="accent">store</mat-icon><a routerLink="/new-shop">Estabelecimento</a></mat-list-item>
+      <mat-list-item *ngIf="profileType == 'CUSTOMER'"class="toolbar-item"><mat-icon color="accent">person</mat-icon><a routerLink="/courier">Entregador</a></mat-list-item>
+    </mat-list>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+
+    <mat-toolbar color="accent">
+      <button (click)="sidenav.toggle()" aria-label="Example icon-button with menu icon" class="example-icon"
+              mat-icon-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Carrinho</span>
+      <span class="example-spacer"></span>
+      <button (click)="goBack()" mat-icon-button>
+        <mat-icon>arrow_back</mat-icon>
+      </button>
+    </mat-toolbar>
+
+    <div class="schedule">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-panel-description>
+              Agendar Entrega
+              <span class="example-spacer"></span>
+              <mat-icon>date_range</mat-icon>
+            </mat-panel-description>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="schedule__inputs-wrapper">
+          <mat-form-field appearance="outline" color="accent">
+            <mat-label>Dia</mat-label>
+            <input matInput [matDatepicker]="picker" [(ngModel)]="scheduleDay"
+                   placeholder="Escolha o horário de entrega..." readonly>
+            <mat-datepicker #picker></mat-datepicker>
+            <mat-icon matSuffix (click)="picker.open()">calendar_today</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" color="accent">
+            <mat-label>Horário</mat-label>
+            <input matTimepicker #t="matTimepicker" [strict]="false" mode="24h" [(ngModel)]="scheduleTime"
+                   placeholder="Escolha o horário de entrega..." readonly>
+            <mat-icon matSuffix (click)="t.showDialog()">access_time</mat-icon>
+          </mat-form-field>
+        </div>
+      </mat-expansion-panel>
+    </div>
+
+  <div class="wrappers" *ngIf="shop">
+    <div class="shop-container">
+        <div>
+          <img class="shop-container__logo" src="{{shop.image}}" alt="https://www.pngplay.com/wp-content/uploads/12/Shrek-PNG-HD-Quality.png">
+        </div>
+      <a routerLink="/shop/{{shop.id}}">
+        <div>
+          <span style="font-weight: bold">Loja: </span> {{shop.name}}
+          <div>
+            <span style="font-weight: bold">Endereço: </span> {{shop.location.address}}
+          </div>
+          <div>
+            {{getStars()}}
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+    <div class="cart-header-wrapper">
+
+    </div>
+
+    <div class="cart-scrollable-wrapper" *ngIf="carrinho$">
+      <div class="scrollable-container">
+        <ul class="scrollable-container__inner">
+          <li class="list-item" *ngFor="let product of carrinho$ | async" (click)="productDetail(product)">
+            <div class="list-item-wrapper">
+
+              <div class="list-item-wrapper__trash-wrapper">
+                <button (click)="removeFromCart(product)" class="list-item-wrapper__trash-wrapper__button" mat-icon-button color="accent">
+                  <mat-icon>delete</mat-icon>
+                </button>
+              </div>
+
+              <div class="list-item-wrapper__info">
+                {{product.name}}
+                <div *ngIf="product.price_discount == undefined" class="list-item-wrapper__info__price">
+                  {{product.quantity * product.price | currency}}
+                </div>
+                <div *ngIf="product.price_discount != undefined" class="list-item-wrapper__info__price">
+                  {{product.quantity * product.price_discount | currency}}
+                </div>
+                <div *ngIf="product.observation">
+                  <span style="font-weight: bold">Obs.: </span> {{product.observation}}
+                </div>
+              </div>
+
+              <div style="display: flex; flex-direction: row; justify-content: space-between; gap: 8px">
+                <div style="display: flex; flex-direction: column; justify-content: center">
+                  <div class="list-item-wrapper__quantity">
+                    <span style="font-weight: bold">Qtd.:</span> {{product.quantity}}
+                  </div>
+                 </div>
+                 <div class="list-item-wrapper__image">
+                  <img style="width: 48px; margin-left: 4px" src="{{product.imageUrl}}">
+                 </div>
+              </div>
+
+
+
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+    <div class="customer-info-wrapper">
+      <div>
+        <span class="p_font">Entregar em:</span> {{endereco}}
+      </div>
+
+      <div *ngIf="shop">
+        <span class="p_font">Taxa de entrega: </span>{{shop.deliveryFee | currency}}
+
+      </div>
+
+      <div>
+        <span class="p_font">Total: </span>{{getTotalCost() | currency}}
+      </div>
+    </div>
+
+
+  <div class="wrappers">
+    <div>
+      <p class="p_font">Forma de Pagamento: </p>
+      <mat-radio-group [(ngModel)]="tipo_pagamento">
+        <mat-radio-button value="CASH">Dinheiro</mat-radio-button>
+        <mat-radio-button (click)="getCardList()" value="CARD">Cartão</mat-radio-button>
+      </mat-radio-group>
+    </div>
+  </div>
+
+  <div class="wrappers" *ngIf="tipo_pagamento != 'CASH'">
+    <span class="p_font">Cartão: </span>
+    <span> {{cartao?.nickname}}</span>
+  </div>
+
+
+
+
+
+  <div class="wrappers">
+      <button (click)="onSubmit()" class="botao" mat-raised-button color="accent" disabled="{{finishOrderDisabled}}">Finalizar</button>
+  </div>
+
+
+</mat-sidenav-content>
+</mat-sidenav-container>

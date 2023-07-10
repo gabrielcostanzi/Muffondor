@@ -1,0 +1,41 @@
+<section class="container">
+
+
+  <form class="formulario">
+
+    <img class="logo" src="assets/mufflogo/logo4.png">
+    <h1 class="titulo">Muffondor</h1>
+
+
+    <mat-form-field class="form-field" floatLabel="always" color="accent" appearance="outline">
+
+      <mat-label class="form-field__label">Login</mat-label>
+
+      <input matInput class="form-field__input" [(ngModel)]="email" name="login">
+
+    </mat-form-field>
+
+    <mat-form-field class="form-field" floatLabel="always" color="accent" appearance="outline">
+
+      <mat-label class="form-field__label">Senha</mat-label>
+
+      <input matInput class="form-field__input" [(ngModel)]="password" name="password" [type]="hide ? 'password' : 'text'">
+
+      <button mat-icon-button matSuffix (click)="hide = !hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <div class="esqueci-senha">
+      <a href="http://localhost:3000/credentials">Esqueci minha senha</a>
+    </div>
+
+    <div class="botao-wrapper">
+      <button (click)="cadastrarNovoUsuario()" class="botao__cadastrar" mat-raised-button color="accent">Cadastrar</button>
+      <button (click)="logMeIn()" class="botao__entrar"mat-raised-button color="accent" type="submit">Entrar</button>
+    </div>
+
+  </form>
+
+</section>
+

@@ -1,0 +1,167 @@
+
+a {
+  text-decoration: none !important;
+  color: black;
+}
+
+.schedule {
+  margin: 10px;
+  &__inputs-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.cart-scrollable-wrapper{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin: 10px;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.scrollable-container{
+  width: auto;
+  height: 50vh;
+  overflow: hidden;
+  margin: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+
+  &__inner{
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100%;
+  }
+}
+
+.list-item-wrapper {
+
+  margin: 8px;
+  list-style-type: none;
+  //box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding: 4px;
+
+  &__trash-wrapper{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &__button{
+
+    }
+  }
+
+  &__info{
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 auto;
+
+    &__price{
+    }
+
+  }
+
+  &__quantity{
+    pointer-events: none;
+  }
+
+  &__image{
+    pointer-events: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+}
+
+.list-item{
+  :hover{
+    transform: scale(0.98);
+    cursor: pointer;
+  }
+  :active{
+    background-color: rgba(239, 107, 101, 0.11);
+  }
+}
+
+
+
+
+
+
+.quantidade-container {
+  width: 20%;
+  text-align: center;
+}
+
+.titulo-container {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.p_font {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.mat-radio-button {
+  margin: 10px;
+}
+
+.botao {
+  flex: 1 1 auto;
+  height: 50px;
+  font-size: 18px;
+}
+
+
+.title-wrapper {
+  background: rgba(232, 232, 232, 0.5);
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.shop-container {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+
+  &__logo {
+    height: 4em;
+    margin: 0px 5px;
+  }
+}
+
+.wrappers {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin: 10px;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.customer-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin: 10px;
+  padding: 4px;
+  border-radius: 6px;
+}

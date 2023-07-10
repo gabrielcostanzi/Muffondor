@@ -1,0 +1,145 @@
+
+.search-box{
+  margin: 12px;
+  border-radius: 12px;
+}
+
+a {
+  text-decoration: none !important;
+  color: black;
+}
+
+.lista-estabelecimentos{
+  font-family: Ubuntu;
+  font-size:80px;
+}
+
+.title-wrapper{
+  margin: 4px 12px;
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.carousel-wrapper{
+  margin: 8px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.carousel{
+  align-items: center;
+}
+
+.title{
+  margin: auto;
+  font-family: Roboto;
+  font-size: 20px;
+}
+
+.main{
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+
+.divider{
+
+}
+
+.categoria{
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  &__label{
+    font-family: "Roboto";
+    font-size: 12px;
+  }
+
+  &__logo{
+    width: 28%;
+    margin-top: 6px;
+  }
+}
+
+.carousel-cell{
+  align-items: center;
+  flex: 1 1 auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.botao-comprar{
+  border-radius: 16px;
+  background-color: forestgreen;
+  color: whitesmoke;
+}
+
+.botao-comparar{
+  border-radius: 16px;
+  margin-right: 10px;
+  color: whitesmoke;
+}
+
+.image-item{
+  margin: 10px;
+  height: 60px;
+}
+
+.tile{
+  background: #ffffff;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 5px;
+}
+
+.product-name{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
+}
+
+.search-wrapper{
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 12px;
+  margin: 8px;
+  padding: 4px;
+  border-radius: 6px;
+
+  &__field{
+    margin: (0px 4px -18px);
+    flex: 1 1 auto;
+  }
+}
+
+.wrapper{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 12px;
+  margin: 8px;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.item-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.discount{
+  text-decoration: line-through;
+}
+
+.price{
+  text-decoration: None;
+}
+
+

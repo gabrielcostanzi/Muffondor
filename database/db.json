@@ -1,0 +1,1200 @@
+{
+  "credentials": [
+    {
+      "email": "admin",
+      "type": "SHOP",
+      "name": "Administração",
+      "surname": "Da Silva",
+      "cpf": "94234923492",
+      "endereco": "Avenida Paraná",
+      "cep": "82348234",
+      "complemento": "",
+      "password": "123",
+      "id": 1,
+      "shopId": 1,
+      "paymentCards": []
+    },
+    {
+      "email": "loja2@gmail.com",
+      "type": "SHOP",
+      "name": "Alfredo",
+      "surname": "Barroso",
+      "cpf": "23478294234",
+      "endereco": "Avenida Colombo",
+      "cep": "23423784",
+      "complemento": "",
+      "password": "123",
+      "id": 2,
+      "shopId": 2,
+      "paymentCards": []
+    },
+    {
+      "email": "angeloni@gmail.com",
+      "type": "SHOP",
+      "name": "Dono do Angeloni",
+      "surname": "Silva",
+      "cpf": "12931283128",
+      "endereco": "Avenida Brasil",
+      "cep": "23984238",
+      "complemento": "",
+      "password": "123",
+      "id": 3,
+      "shopId": 3,
+      "paymentCards": []
+    },
+    {
+      "email": "muffato@gmail.com",
+      "type": "SHOP",
+      "name": "Muffato dono",
+      "surname": "Da Silva",
+      "cpf": "42384239042",
+      "endereco": "Avenida Paraná",
+      "cep": "23489234",
+      "complemento": "",
+      "password": "123",
+      "id": 4,
+      "shopId": 4,
+      "paymentCards": []
+    },
+    {
+      "email": "comprador@gmail.com",
+      "type": "COURIER",
+      "name": "João",
+      "surname": "Da Silva",
+      "cpf": "23894723894",
+      "endereco": "Rua dos Santos",
+      "cep": "89347289",
+      "complemento": "",
+      "password": "123",
+      "id": 5,
+      "paymentCards": [
+        {
+          "type": "CREDIT_CARD",
+          "cardType": "MASTERCARD",
+          "nickname": "Sem limites",
+          "nameOnCard": "Toguro",
+          "cardNumber": "5432423423423423",
+          "cvv": "103",
+          "expDate": "0323"
+        }
+      ],
+      "courierId": 1
+    },
+    {
+      "email": "condor@gmail.com",
+      "type": "SHOP",
+      "name": "Condorino",
+      "surname": "Souza",
+      "cpf": "23423498237",
+      "endereco": "Praça dos Pombos",
+      "cep": "34902384",
+      "complemento": "",
+      "password": "123",
+      "id": 6,
+      "shopId": 5,
+      "paymentCards": []
+    },
+    {
+      "name": "Bunda",
+      "surname": "Lixo",
+      "email": "arrombado@gmail.com",
+      "endereco": "Casa",
+      "cep": "23123123",
+      "cpf": "94234923492",
+      "telefone": "31231231232",
+      "password": "123",
+      "type": "CUSTOMER",
+      "complemento": "",
+      "paymentCards": [],
+      "id": 7
+    }
+  ],
+  "shop": [
+    {
+      "name": "Loja da Esquina",
+      "zipCode": "3842748237",
+      "cnpj": "1238912381279",
+      "products": [
+        {
+          "name": "Banana",
+          "barcode": 21312423423,
+          "category": "Hortifruti",
+          "quantity": 50,
+          "imageUrl": "assets/categorias/hortifruti.png",
+          "price": 3.5,
+          "sold_units": 0,
+          "id": 1
+        }
+      ],
+      "location": {
+        "address": "Avenida Colombo 1024"
+      },
+      "image": "assets/shops/shop-1.png",
+      "rating": 4,
+      "deliveryFee": 12,
+      "estimatedDeliveryTime": 45,
+      "id": 1
+    },
+    {
+      "name": "Dogão Lanches",
+      "zipCode": "842384237",
+      "cnpj": "1234823489",
+      "products": [
+        {
+          "name": "X-Frango",
+          "barcode": 23948234892,
+          "category": "Carnes",
+          "quantity": 25,
+          "imageUrl": "assets/categorias/carnes.png",
+          "price": 22.5,
+          "sold_units": 0,
+          "id": 2,
+          "price_discount": "12"
+        },
+        {
+          "name": "X-Ovo",
+          "barcode": 12323489234,
+          "category": "Carnes",
+          "quantity": 50,
+          "imageUrl": "assets/categorias/carnes.png",
+          "price": 30,
+          "sold_units": 0,
+          "id": 3
+        }
+      ],
+      "location": {
+        "address": "Avenida Mandacaru 1024"
+      },
+      "image": "assets/shops/shop-3.png",
+      "rating": 2,
+      "deliveryFee": 12,
+      "estimatedDeliveryTime": 45,
+      "id": 2
+    },
+    {
+      "name": "Angeloni",
+      "zipCode": "23482348",
+      "cnpj": "2342342390",
+      "products": [
+        {
+          "name": "Hoverboard Big Foot X 10 Pol 500W 4AH 36V",
+          "barcode": 34234234234,
+          "category": "Esportes",
+          "quantity": 15,
+          "imageUrl": "assets/categorias/esportes.png",
+          "price": 2248.9,
+          "sold_units": 0,
+          "id": 4
+        },
+        {
+          "name": "Bicicleta Mormaii Jaws Grafite e Verde com 21 Velocidades Aro 29",
+          "barcode": 32423435345,
+          "category": "Esportes",
+          "quantity": 15,
+          "imageUrl": "assets/categorias/esportes.png",
+          "price": 1299,
+          "sold_units": 0,
+          "id": 5,
+          "price_discount": "899"
+        },
+        {
+          "name": "Luvas Ciclismo Dedo Curto - Preto - G - BI214",
+          "barcode": 42342342342,
+          "category": "Esportes",
+          "quantity": 15,
+          "imageUrl": "assets/categorias/esportes.png",
+          "price": 54.9,
+          "sold_units": 0,
+          "id": 6
+        },
+        {
+          "name": "Camisa de Ciclismo Chumbo Masculina Tam GG Atrio - VB009",
+          "barcode": 23423442342,
+          "category": "Esportes",
+          "quantity": 100,
+          "imageUrl": "assets/categorias/esportes.png",
+          "price": 70.9,
+          "sold_units": 0,
+          "id": 7
+        },
+        {
+          "name": "Macarrão Espaguete Todeschini Sêmola Embalagem 500g",
+          "barcode": 12342342342,
+          "category": "Padaria",
+          "quantity": 100,
+          "imageUrl": "assets/categorias/padaria.png",
+          "price": 3.29,
+          "sold_units": 0,
+          "id": 8
+        },
+        {
+          "name": "Sabão em Pó Lavagem Perfeita Omo 1.6kg",
+          "barcode": 43245353453,
+          "category": "Limpeza",
+          "quantity": 100,
+          "imageUrl": "assets/categorias/limpeza.png",
+          "price": 30.7,
+          "sold_units": 0,
+          "id": 9
+        },
+        {
+          "name": "Água Sanitária Qboa 2l",
+          "barcode": 23442342342,
+          "category": "Limpeza",
+          "quantity": 1000,
+          "imageUrl": "assets/categorias/limpeza.png",
+          "price": 7.94,
+          "sold_units": 0,
+          "id": 10
+        },
+        {
+          "name": "Banana Nanica",
+          "barcode": 31231231231,
+          "category": "Hortifruti",
+          "quantity": 100,
+          "imageUrl": "assets/categorias/hortifruti.png",
+          "price": 5.3,
+          "sold_units": 0,
+          "id": 11
+        },
+        {
+          "name": "Abóbora Itália",
+          "barcode": 23497823462,
+          "category": "Hortifruti",
+          "quantity": 150,
+          "imageUrl": "assets/categorias/hortifruti.png",
+          "price": 2,
+          "sold_units": 0,
+          "id": 12
+        },
+        {
+          "name": "Coca-Cola Original 200ml",
+          "barcode": 23342342342,
+          "category": "Bebidas",
+          "quantity": 100,
+          "imageUrl": "assets/categorias/bebidas.png",
+          "price": 1.44,
+          "sold_units": 0,
+          "id": 13
+        },
+        {
+          "name": "Bebida Ice Vodka Smirnoff 275ml",
+          "barcode": 32890423894,
+          "category": "Bebidas",
+          "quantity": 100,
+          "imageUrl": "assets/categorias/bebidas.png",
+          "price": 9.75,
+          "sold_units": 0,
+          "id": 14
+        },
+        {
+          "name": "Pão de Forma Tradicional Pullman 480g",
+          "barcode": 23423423423,
+          "category": "Padaria",
+          "quantity": 200,
+          "imageUrl": "assets/categorias/padaria.png",
+          "price": 7.96,
+          "sold_units": 0,
+          "id": 15,
+          "price_discount": "4.00"
+        },
+        {
+          "name": "Biscoito Recheado de Chocolate Passatempo 130g",
+          "barcode": 12348723423,
+          "category": "Biscoitos",
+          "quantity": 100,
+          "imageUrl": "assets/categorias/biscoitos.png",
+          "price": 3.1,
+          "sold_units": 0,
+          "id": 16
+        },
+        {
+          "name": "Margarina Cremosa com Sal Qmix Qualy 500g",
+          "barcode": 34908234908,
+          "category": "Frios",
+          "quantity": 100,
+          "imageUrl": "assets/categorias/laticinios.png",
+          "price": 12.23,
+          "sold_units": 0,
+          "id": 17,
+          "price_discount": "8.99"
+        },
+        {
+          "name": "Leite Condensado Semidesnatado Moça 395g",
+          "barcode": 32478946237,
+          "category": "Bomboniere",
+          "quantity": 500,
+          "imageUrl": "assets/categorias/bomboniere.png",
+          "price": 5.5,
+          "sold_units": 0,
+          "id": 18
+        },
+        {
+          "name": "Salsicha Hot Dog Perdigão",
+          "barcode": 23442342342,
+          "category": "Congelados",
+          "quantity": 250,
+          "imageUrl": "assets/products/product-icon.png",
+          "price": 6.34,
+          "sold_units": 0,
+          "id": 19
+        },
+        {
+          "name": "Abridor Pratic Embalagem 1 Un",
+          "barcode": 23987423984,
+          "category": "Ferramentas",
+          "quantity": 100,
+          "imageUrl": "assets/categorias/ferramentas.png",
+          "price": 7.78,
+          "sold_units": 0,
+          "id": 20,
+          "price_discount": "3.50"
+        },
+        {
+          "name": "Ração para Cães Adultos Dog Chow Carne Ao Molho 100g",
+          "barcode": 34290482390,
+          "category": "Pet",
+          "quantity": 100,
+          "imageUrl": "assets/categorias/pet.png",
+          "price": 55.9,
+          "sold_units": 0,
+          "id": 21
+        }
+      ],
+      "location": {
+        "address": "Avenida Tiradentes"
+      },
+      "image": "assets/shops/shop-2.png",
+      "rating": 3,
+      "deliveryFee": 15,
+      "estimatedDeliveryTime": 80,
+      "id": 3
+    },
+    {
+      "name": "Muffato",
+      "zipCode": "489237423894",
+      "cnpj": "2348972348972",
+      "products": [
+        {
+          "name": "Alimento Ração Pedigree Equilíbrio Natural para Cães Adultos de Raças Pequenas e Minis 1kg",
+          "barcode": 32409482390,
+          "category": "Pet",
+          "quantity": 50,
+          "imageUrl": "assets/categorias/pet.png",
+          "price": 33.95,
+          "sold_units": 0,
+          "id": 22
+        },
+        {
+          "name": "Alimento Ração Pedigree para Cães Filhotes Raças Médias e Grandes 1kg",
+          "barcode": 34248923478,
+          "category": "Pet",
+          "quantity": 150,
+          "imageUrl": "assets/categorias/pet.png",
+          "price": 27.71,
+          "sold_units": 0,
+          "id": 23
+        },
+        {
+          "name": "Creme Hidratante Nivea Embalagem 56g",
+          "barcode": 23423498234,
+          "category": "Higiene",
+          "quantity": 100,
+          "imageUrl": "assets/categorias/higiene.png",
+          "price": 27.26,
+          "sold_units": 0,
+          "id": 24,
+          "price_discount": "10"
+        },
+        {
+          "name": "Chin Ipanema Anatomica Masc Sur Par",
+          "barcode": 23490823490,
+          "category": "Bazar",
+          "quantity": 100,
+          "imageUrl": "assets/categorias/bazar.png",
+          "price": 22.81,
+          "sold_units": 0,
+          "id": 25
+        },
+        {
+          "name": "Abóbora Moranga",
+          "barcode": 23423423423,
+          "category": "Hortifruti",
+          "quantity": 324,
+          "imageUrl": "assets/categorias/hortifruti.png",
+          "price": 15.44,
+          "sold_units": 0,
+          "id": 26
+        },
+        {
+          "name": "Filezinho Copacol Sassami Congelado 1kg",
+          "barcode": 34923847238,
+          "category": "Carnes",
+          "quantity": 100,
+          "imageUrl": "assets/categorias/carnes.png",
+          "price": "18.99",
+          "sold_units": 0,
+          "id": 27
+        }
+      ],
+      "location": {
+        "address": "Avenida Laguna 302"
+      },
+      "image": "assets/shops/shop-1.png",
+      "rating": 0,
+      "deliveryFee": 6.99,
+      "estimatedDeliveryTime": 90,
+      "id": 4
+    },
+    {
+      "name": "Condor",
+      "zipCode": "23894723789",
+      "cnpj": "239847238947238974",
+      "products": [
+        {
+          "name": "Requeijão Cremoso Vigor Tradicional 200g",
+          "barcode": 42389472348,
+          "category": "Frios",
+          "quantity": 100,
+          "imageUrl": "assets/categorias/laticinios.png",
+          "price": 7.96,
+          "sold_units": 0,
+          "id": 28,
+          "price_discount": "4.50"
+        },
+        {
+          "name": "Cachaça Velho Barreiro 910ml",
+          "barcode": 12312312312,
+          "category": "Bebidas",
+          "quantity": 100,
+          "imageUrl": "assets/categorias/bebidas.png",
+          "price": 14.21,
+          "sold_units": 0,
+          "id": 29
+        },
+        {
+          "name": "Salamitos Sadia Embalagem 36g",
+          "barcode": 23231231231,
+          "category": "Mercearia",
+          "quantity": 100,
+          "imageUrl": "assets/categorias/mercearia.png",
+          "price": 4.66,
+          "sold_units": 0,
+          "id": 30
+        },
+        {
+          "name": "Whisky Escocês Passport Scotch 1l",
+          "barcode": 23423423487,
+          "category": "Bebidas",
+          "quantity": 100,
+          "imageUrl": "assets/categorias/bebidas.png",
+          "price": 53.32,
+          "sold_units": 0,
+          "id": 31
+        },
+        {
+          "name": "Atum Ralado Ao Natural Gomes da Costa 170g",
+          "barcode": 42342323423,
+          "category": "Enlatados",
+          "quantity": 100,
+          "imageUrl": "assets/categorias/enlatados.png",
+          "price": 8.73,
+          "sold_units": 0,
+          "id": 32
+        },
+        {
+          "name": "Maçã Fuji",
+          "barcode": 23423423423,
+          "category": "Hortifruti",
+          "quantity": 100,
+          "imageUrl": "assets/categorias/hortifruti.png",
+          "price": 1.73,
+          "sold_units": 0,
+          "id": 33
+        },
+        {
+          "name": "Laranja",
+          "barcode": 23232323234,
+          "category": "Hortifruti",
+          "quantity": 200,
+          "imageUrl": "assets/categorias/hortifruti.png",
+          "price": 1.2,
+          "sold_units": 0,
+          "id": 34
+        },
+        {
+          "name": "Vinho Somm Tinto Cabernet Franc+Syrah Lt 269ml",
+          "barcode": 23423423423,
+          "category": "Bebidas",
+          "quantity": 100,
+          "imageUrl": "assets/categorias/bebidas.png",
+          "price": 14.42,
+          "sold_units": 0,
+          "id": 35,
+          "price_discount": "9.98"
+        },
+        {
+          "name": "Pipoca de Microondas Popcorn Manteiga de Cinema Yoki 100g",
+          "barcode": 23498723489,
+          "category": "Mercearia",
+          "quantity": 100,
+          "imageUrl": "assets/categorias/mercearia.png",
+          "price": 4.98,
+          "sold_units": 0,
+          "id": 36
+        },
+        {
+          "name": "Coca-Cola sem Açúcar 2l",
+          "barcode": 23423423322,
+          "category": "Bebidas",
+          "quantity": 100,
+          "imageUrl": "assets/categorias/bebidas.png",
+          "price": 8.97,
+          "sold_units": 0,
+          "id": 37
+        }
+      ],
+      "location": {
+        "address": "Avenida Paraná 1024"
+      },
+      "image": "assets/shops/shop-1.png",
+      "rating": 0,
+      "deliveryFee": 0,
+      "estimatedDeliveryTime": 30,
+      "id": 5
+    }
+  ],
+  "courier": [
+    {
+      "cnh": "",
+      "name": "João",
+      "vehicleType": "bicycle",
+      "location": {
+        "lat": -23.413060764874313,
+        "long": -51.93812922195265
+      },
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "name": "Banana",
+      "barcode": 21312423423,
+      "category": "Hortifruti",
+      "quantity": 50,
+      "imageUrl": "assets/categorias/hortifruti.png",
+      "price": 3.5,
+      "sold_units": 0,
+      "id": 1
+    },
+    {
+      "name": "X-Frango",
+      "barcode": 23948234892,
+      "category": "Carnes",
+      "quantity": 25,
+      "imageUrl": "assets/categorias/carnes.png",
+      "price": 22.5,
+      "sold_units": 0,
+      "id": 2,
+      "price_discount": "12"
+    },
+    {
+      "name": "X-Ovo",
+      "barcode": 12323489234,
+      "category": "Carnes",
+      "quantity": 50,
+      "imageUrl": "assets/categorias/carnes.png",
+      "price": 30,
+      "sold_units": 0,
+      "id": 3
+    },
+    {
+      "name": "Hoverboard Big Foot X 10 Pol 500W 4AH 36V",
+      "barcode": 34234234234,
+      "category": "Esportes",
+      "quantity": 15,
+      "imageUrl": "assets/categorias/esportes.png",
+      "price": 2248.9,
+      "sold_units": 0,
+      "id": 4
+    },
+    {
+      "name": "Bicicleta Mormaii Jaws Grafite e Verde com 21 Velocidades Aro 29",
+      "barcode": 32423435345,
+      "category": "Esportes",
+      "quantity": 15,
+      "imageUrl": "assets/categorias/esportes.png",
+      "price": 1299,
+      "sold_units": 0,
+      "id": 5,
+      "price_discount": "899"
+    },
+    {
+      "name": "Luvas Ciclismo Dedo Curto - Preto - G - BI214",
+      "barcode": 42342342342,
+      "category": "Esportes",
+      "quantity": 15,
+      "imageUrl": "assets/categorias/esportes.png",
+      "price": 54.9,
+      "sold_units": 0,
+      "id": 6
+    },
+    {
+      "name": "Camisa de Ciclismo Chumbo Masculina Tam GG Atrio - VB009",
+      "barcode": 23423442342,
+      "category": "Esportes",
+      "quantity": 100,
+      "imageUrl": "assets/categorias/esportes.png",
+      "price": 70.9,
+      "sold_units": 0,
+      "id": 7
+    },
+    {
+      "name": "Macarrão Espaguete Todeschini Sêmola Embalagem 500g",
+      "barcode": 12342342342,
+      "category": "Padaria",
+      "quantity": 100,
+      "imageUrl": "assets/categorias/padaria.png",
+      "price": 3.29,
+      "sold_units": 0,
+      "id": 8
+    },
+    {
+      "name": "Sabão em Pó Lavagem Perfeita Omo 1.6kg",
+      "barcode": 43245353453,
+      "category": "Limpeza",
+      "quantity": 100,
+      "imageUrl": "assets/categorias/limpeza.png",
+      "price": 30.7,
+      "sold_units": 0,
+      "id": 9
+    },
+    {
+      "name": "Água Sanitária Qboa 2l",
+      "barcode": 23442342342,
+      "category": "Limpeza",
+      "quantity": 1000,
+      "imageUrl": "assets/categorias/limpeza.png",
+      "price": 7.94,
+      "sold_units": 0,
+      "id": 10
+    },
+    {
+      "name": "Banana Nanica",
+      "barcode": 31231231231,
+      "category": "Hortifruti",
+      "quantity": 100,
+      "imageUrl": "assets/categorias/hortifruti.png",
+      "price": 5.3,
+      "sold_units": 0,
+      "id": 11
+    },
+    {
+      "name": "Abóbora Itália",
+      "barcode": 23497823462,
+      "category": "Hortifruti",
+      "quantity": 150,
+      "imageUrl": "assets/categorias/hortifruti.png",
+      "price": 2,
+      "sold_units": 0,
+      "id": 12
+    },
+    {
+      "name": "Coca-Cola Original 200ml",
+      "barcode": 23342342342,
+      "category": "Bebidas",
+      "quantity": 100,
+      "imageUrl": "assets/categorias/bebidas.png",
+      "price": 1.44,
+      "sold_units": 0,
+      "id": 13
+    },
+    {
+      "name": "Bebida Ice Vodka Smirnoff 275ml",
+      "barcode": 32890423894,
+      "category": "Bebidas",
+      "quantity": 100,
+      "imageUrl": "assets/categorias/bebidas.png",
+      "price": 9.75,
+      "sold_units": 0,
+      "id": 14
+    },
+    {
+      "name": "Pão de Forma Tradicional Pullman 480g",
+      "barcode": 23423423423,
+      "category": "Padaria",
+      "quantity": 200,
+      "imageUrl": "assets/categorias/padaria.png",
+      "price": 7.96,
+      "sold_units": 0,
+      "id": 15,
+      "price_discount": "4.00"
+    },
+    {
+      "name": "Biscoito Recheado de Chocolate Passatempo 130g",
+      "barcode": 12348723423,
+      "category": "Biscoitos",
+      "quantity": 100,
+      "imageUrl": "assets/categorias/biscoitos.png",
+      "price": 3.1,
+      "sold_units": 0,
+      "id": 16
+    },
+    {
+      "name": "Margarina Cremosa com Sal Qmix Qualy 500g",
+      "barcode": 34908234908,
+      "category": "Frios",
+      "quantity": 100,
+      "imageUrl": "assets/categorias/laticinios.png",
+      "price": 12.23,
+      "sold_units": 0,
+      "id": 17,
+      "price_discount": "8.99"
+    },
+    {
+      "name": "Leite Condensado Semidesnatado Moça 395g",
+      "barcode": 32478946237,
+      "category": "Bomboniere",
+      "quantity": 500,
+      "imageUrl": "assets/categorias/bomboniere.png",
+      "price": 5.5,
+      "sold_units": 0,
+      "id": 18
+    },
+    {
+      "name": "Salsicha Hot Dog Perdigão",
+      "barcode": 23442342342,
+      "category": "Congelados",
+      "quantity": 250,
+      "imageUrl": "assets/products/product-icon.png",
+      "price": 6.34,
+      "sold_units": 0,
+      "id": 19
+    },
+    {
+      "name": "Abridor Pratic Embalagem 1 Un",
+      "barcode": 23987423984,
+      "category": "Ferramentas",
+      "quantity": 100,
+      "imageUrl": "assets/categorias/ferramentas.png",
+      "price": 7.78,
+      "sold_units": 0,
+      "id": 20,
+      "price_discount": "3.50"
+    },
+    {
+      "name": "Ração para Cães Adultos Dog Chow Carne Ao Molho 100g",
+      "barcode": 34290482390,
+      "category": "Pet",
+      "quantity": 100,
+      "imageUrl": "assets/categorias/pet.png",
+      "price": 55.9,
+      "sold_units": 0,
+      "id": 21
+    },
+    {
+      "name": "Alimento Ração Pedigree Equilíbrio Natural para Cães Adultos de Raças Pequenas e Minis 1kg",
+      "barcode": 32409482390,
+      "category": "Pet",
+      "quantity": 50,
+      "imageUrl": "assets/categorias/pet.png",
+      "price": 33.95,
+      "sold_units": 0,
+      "id": 22
+    },
+    {
+      "name": "Alimento Ração Pedigree para Cães Filhotes Raças Médias e Grandes 1kg",
+      "barcode": 34248923478,
+      "category": "Pet",
+      "quantity": 150,
+      "imageUrl": "assets/categorias/pet.png",
+      "price": 27.71,
+      "sold_units": 0,
+      "id": 23
+    },
+    {
+      "name": "Creme Hidratante Nivea Embalagem 56g",
+      "barcode": 23423498234,
+      "category": "Higiene",
+      "quantity": 100,
+      "imageUrl": "assets/categorias/higiene.png",
+      "price": 27.26,
+      "sold_units": 0,
+      "id": 24,
+      "price_discount": "10"
+    },
+    {
+      "name": "Chin Ipanema Anatomica Masc Sur Par",
+      "barcode": 23490823490,
+      "category": "Bazar",
+      "quantity": 100,
+      "imageUrl": "assets/categorias/bazar.png",
+      "price": 22.81,
+      "sold_units": 0,
+      "id": 25
+    },
+    {
+      "name": "Abóbora Moranga",
+      "barcode": 23423423423,
+      "category": "Hortifruti",
+      "quantity": 324,
+      "imageUrl": "assets/categorias/hortifruti.png",
+      "price": 15.44,
+      "sold_units": 0,
+      "id": 26
+    },
+    {
+      "name": "Filezinho Copacol Sassami Congelado 1kg",
+      "barcode": 34923847238,
+      "category": "Carnes",
+      "quantity": 100,
+      "imageUrl": "assets/categorias/carnes.png",
+      "price": "18.99",
+      "sold_units": 0,
+      "id": 27
+    },
+    {
+      "name": "Requeijão Cremoso Vigor Tradicional 200g",
+      "barcode": 42389472348,
+      "category": "Frios",
+      "quantity": 100,
+      "imageUrl": "assets/categorias/laticinios.png",
+      "price": 7.96,
+      "sold_units": 0,
+      "id": 28,
+      "price_discount": "4.50"
+    },
+    {
+      "name": "Cachaça Velho Barreiro 910ml",
+      "barcode": 12312312312,
+      "category": "Bebidas",
+      "quantity": 100,
+      "imageUrl": "assets/categorias/bebidas.png",
+      "price": 14.21,
+      "sold_units": 0,
+      "id": 29
+    },
+    {
+      "name": "Salamitos Sadia Embalagem 36g",
+      "barcode": 23231231231,
+      "category": "Mercearia",
+      "quantity": 100,
+      "imageUrl": "assets/categorias/mercearia.png",
+      "price": 4.66,
+      "sold_units": 0,
+      "id": 30
+    },
+    {
+      "name": "Whisky Escocês Passport Scotch 1l",
+      "barcode": 23423423487,
+      "category": "Bebidas",
+      "quantity": 100,
+      "imageUrl": "assets/categorias/bebidas.png",
+      "price": 53.32,
+      "sold_units": 0,
+      "id": 31
+    },
+    {
+      "name": "Atum Ralado Ao Natural Gomes da Costa 170g",
+      "barcode": 42342323423,
+      "category": "Enlatados",
+      "quantity": 100,
+      "imageUrl": "assets/categorias/enlatados.png",
+      "price": 8.73,
+      "sold_units": 0,
+      "id": 32
+    },
+    {
+      "name": "Maçã Fuji",
+      "barcode": 23423423423,
+      "category": "Hortifruti",
+      "quantity": 100,
+      "imageUrl": "assets/categorias/hortifruti.png",
+      "price": 1.73,
+      "sold_units": 0,
+      "id": 33
+    },
+    {
+      "name": "Laranja",
+      "barcode": 23232323234,
+      "category": "Hortifruti",
+      "quantity": 200,
+      "imageUrl": "assets/categorias/hortifruti.png",
+      "price": 1.2,
+      "sold_units": 0,
+      "id": 34
+    },
+    {
+      "name": "Vinho Somm Tinto Cabernet Franc+Syrah Lt 269ml",
+      "barcode": 23423423423,
+      "category": "Bebidas",
+      "quantity": 100,
+      "imageUrl": "assets/categorias/bebidas.png",
+      "price": 14.42,
+      "sold_units": 0,
+      "id": 35,
+      "price_discount": "9.98"
+    },
+    {
+      "name": "Pipoca de Microondas Popcorn Manteiga de Cinema Yoki 100g",
+      "barcode": 23498723489,
+      "category": "Mercearia",
+      "quantity": 100,
+      "imageUrl": "assets/categorias/mercearia.png",
+      "price": 4.98,
+      "sold_units": 0,
+      "id": 36
+    },
+    {
+      "name": "Coca-Cola sem Açúcar 2l",
+      "barcode": 23423423322,
+      "category": "Bebidas",
+      "quantity": 100,
+      "imageUrl": "assets/categorias/bebidas.png",
+      "price": 8.97,
+      "sold_units": 0,
+      "id": 37
+    }
+  ],
+  "orders": [
+    {
+      "products": [
+        {
+          "name": "X-Frango",
+          "barcode": 23948234892,
+          "category": "Carnes",
+          "quantity": 2,
+          "imageUrl": "assets/categorias/carnes.png",
+          "price": 22.5,
+          "sold_units": 0,
+          "id": 2,
+          "price_discount": "12"
+        }
+      ],
+      "customerId": 5,
+      "customerName": "João",
+      "shopId": 2,
+      "shopName": "Dogão Lanches",
+      "status": "ON_THE_WAY",
+      "deliveryFee": 12,
+      "courierRejectedIds": [],
+      "paymentStatus": "NOT_PAID",
+      "paymentMethod": "CASH",
+      "pickupLocation": {
+        "address": "Avenida Mandacaru 1024"
+      },
+      "deliveryLocation": {
+        "address": "Rua dos Santos",
+        "lat": 1,
+        "long": 2
+      },
+      "createdAt": "2022-05-02T16:00:40.023Z",
+      "updatedAt": "2022-05-02T16:01:35.192Z",
+      "estimatedAt": "2022-05-02T16:45:40.023Z",
+      "id": 1,
+      "courier": []
+    },
+    {
+      "products": [
+        {
+          "name": "X-Ovo",
+          "barcode": 12323489234,
+          "category": "Carnes",
+          "quantity": 1,
+          "imageUrl": "assets/categorias/carnes.png",
+          "price": 30,
+          "sold_units": 0,
+          "id": 3
+        },
+        {
+          "name": "X-Frango",
+          "barcode": 23948234892,
+          "category": "Carnes",
+          "quantity": 1,
+          "imageUrl": "assets/categorias/carnes.png",
+          "price": 22.5,
+          "sold_units": 0,
+          "id": 2,
+          "price_discount": "12"
+        }
+      ],
+      "customerId": 5,
+      "customerName": "João",
+      "shopId": 2,
+      "shopName": "Dogão Lanches",
+      "status": "PLACED",
+      "deliveryFee": 12,
+      "courierRejectedIds": [],
+      "paymentStatus": "PAID",
+      "paymentMethod": {
+        "type": "CREDIT_CARD",
+        "cardType": "MASTERCARD",
+        "nickname": "Sem limites",
+        "nameOnCard": "Toguro",
+        "cardNumber": "5432423423423423",
+        "cvv": "103",
+        "expDate": "0323"
+      },
+      "pickupLocation": {
+        "address": "Avenida Mandacaru 1024"
+      },
+      "deliveryLocation": {
+        "address": "Rua dos Santos",
+        "lat": 1,
+        "long": 2
+      },
+      "createdAt": "2023-06-26T19:50:03.311Z",
+      "updatedAt": "2023-06-26T19:50:03.311Z",
+      "estimatedAt": "2023-06-26T20:35:03.311Z",
+      "id": 2
+    },
+    {
+      "products": [
+        {
+          "name": "X-Frango",
+          "barcode": 23948234892,
+          "category": "Carnes",
+          "quantity": 1,
+          "imageUrl": "assets/categorias/carnes.png",
+          "price": 22.5,
+          "sold_units": 0,
+          "id": 2,
+          "price_discount": "12",
+          "observation": "Sem maionese\n"
+        }
+      ],
+      "customerId": 5,
+      "customerName": "João",
+      "shopId": 2,
+      "shopName": "Dogão Lanches",
+      "status": "PLACED",
+      "deliveryFee": 12,
+      "courierRejectedIds": [],
+      "paymentStatus": "NOT_PAID",
+      "paymentMethod": "CASH",
+      "pickupLocation": {
+        "address": "Avenida Mandacaru 1024"
+      },
+      "deliveryLocation": {
+        "address": "Rua dos Santos",
+        "lat": 1,
+        "long": 2
+      },
+      "createdAt": "2023-06-26T19:52:39.616Z",
+      "updatedAt": "2023-06-26T19:52:39.616Z",
+      "estimatedAt": "2023-06-26T20:37:39.616Z",
+      "id": 3
+    },
+    {
+      "products": [
+        {
+          "name": "Creme Hidratante Nivea Embalagem 56g",
+          "barcode": 23423498234,
+          "category": "Higiene",
+          "quantity": 1,
+          "imageUrl": "assets/categorias/higiene.png",
+          "price": 27.26,
+          "sold_units": 0,
+          "id": 24,
+          "price_discount": "10"
+        },
+        {
+          "name": "Alimento Ração Pedigree Equilíbrio Natural para Cães Adultos de Raças Pequenas e Minis 1kg",
+          "barcode": 32409482390,
+          "category": "Pet",
+          "quantity": 1,
+          "imageUrl": "assets/categorias/pet.png",
+          "price": 33.95,
+          "sold_units": 0,
+          "id": 22
+        },
+        {
+          "name": "Filezinho Copacol Sassami Congelado 1kg",
+          "barcode": 34923847238,
+          "category": "Carnes",
+          "quantity": 1,
+          "imageUrl": "assets/categorias/carnes.png",
+          "price": "18.99",
+          "sold_units": 0,
+          "id": 27
+        }
+      ],
+      "customerId": 5,
+      "customerName": "João",
+      "shopId": 4,
+      "shopName": "Muffato",
+      "status": "PLACED",
+      "deliveryFee": 6.99,
+      "courierRejectedIds": [],
+      "paymentStatus": "NOT_PAID",
+      "paymentMethod": "CASH",
+      "pickupLocation": {
+        "address": "Avenida Laguna 302"
+      },
+      "deliveryLocation": {
+        "address": "Rua dos Santos",
+        "lat": 1,
+        "long": 2
+      },
+      "createdAt": "2023-06-26T19:56:35.159Z",
+      "updatedAt": "2023-06-26T19:56:35.159Z",
+      "estimatedAt": "2023-06-26T21:26:35.159Z",
+      "id": 4
+    },
+    {
+      "products": [
+        {
+          "name": "Vinho Somm Tinto Cabernet Franc+Syrah Lt 269ml",
+          "barcode": 23423423423,
+          "category": "Bebidas",
+          "quantity": 3,
+          "imageUrl": "assets/categorias/bebidas.png",
+          "price": 14.42,
+          "sold_units": 0,
+          "id": 35,
+          "price_discount": "9.98"
+        },
+        {
+          "name": "Requeijão Cremoso Vigor Tradicional 200g",
+          "barcode": 42389472348,
+          "category": "Frios",
+          "quantity": 2,
+          "imageUrl": "assets/categorias/laticinios.png",
+          "price": 7.96,
+          "sold_units": 0,
+          "id": 28,
+          "price_discount": "4.50"
+        }
+      ],
+      "customerId": 5,
+      "customerName": "João",
+      "shopId": 5,
+      "shopName": "Condor",
+      "status": "PLACED",
+      "deliveryFee": 0,
+      "courierRejectedIds": [],
+      "paymentStatus": "PAID",
+      "paymentMethod": {
+        "type": "CREDIT_CARD",
+        "cardType": "MASTERCARD",
+        "nickname": "Sem limites",
+        "nameOnCard": "Toguro",
+        "cardNumber": "5432423423423423",
+        "cvv": "103",
+        "expDate": "0323"
+      },
+      "pickupLocation": {
+        "address": "Avenida Paraná 1024"
+      },
+      "deliveryLocation": {
+        "address": "Rua dos Santos",
+        "lat": 1,
+        "long": 2
+      },
+      "createdAt": "2023-06-26T19:58:17.488Z",
+      "updatedAt": "2023-06-26T19:58:17.488Z",
+      "estimatedAt": "2023-06-26T20:28:17.488Z",
+      "id": 5
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding-bottom: 15px;
+}
+
+.titulo {
+  bold: true;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Ubuntu Light";
+  color: var(--muff-accent);
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.formulario {
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.esqueci-senha {
+  text-align: right;
+  font-style: italic;
+  color: cornflowerblue;
+  margin-top: 10px;
+  margin-bottom: 15px;
+
+}
+
+.form-field {
+
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+
+  &__label {
+    font-size: 24px;
+  }
+
+}
+
+.botao-wrapper {
+  display: flex;
+}
+
+.botao {
+  flex: 1;
+  font-size: 16px;
+  padding: 2px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  border-radius: 16px;
+
+  &__cadastrar {
+    @extend .botao;
+    margin-right: 30px;
+    margin-left: 10px;
+  }
+
+  &__entrar {
+    @extend .botao;
+    margin-right: 10px;
+    margin-left: 30px;
+  }
+}
+
+.botao:hover,
+.botao:focus,
+.botao:active {
+  transform: scale(1.1);
+}
+
+

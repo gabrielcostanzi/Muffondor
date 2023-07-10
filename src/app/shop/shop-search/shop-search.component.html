@@ -1,0 +1,35 @@
+<div class="search-wrapper">
+  <mat-form-field class="search-wrapper__field" appearance="outline">
+    <mat-label>Pesquisar</mat-label>
+    <input #searchBox matInput placeholder="Pesquisar..." (input)="search(searchBox.value)">
+    <mat-icon matSuffix (click)="getSearchProducts()">search</mat-icon>
+  </mat-form-field>
+</div>
+
+<div class="wrapper">
+  <ul class="search-result">
+    <li *ngFor="let product of search_products">
+      <div class="list-item-wrapper">
+
+        <div class="list-item-wrapper__logo">
+          <img style="width: 48px; margin-left: 4px" src="{{product.imageUrl}}">
+        </div>
+
+        <div class="list-item-wrapper__name">
+          {{product.name}}
+        </div>
+
+        <div class="list-item-wrapper__buttons-wrp">
+          <button (click)="removeFromCart(product)" class="list-item-wrapper__buttons-wrp__btn" mat-icon-button color="accent">
+            <mat-icon>remove</mat-icon>
+          </button>
+
+          <button (click)="addToCart(product)" class="list-item-wrapper__buttons-wrp__btn" mat-icon-button color="accent">
+            <mat-icon>add</mat-icon>
+          </button>
+        </div>
+
+      </div>
+    </li>
+  </ul>
+</div>
